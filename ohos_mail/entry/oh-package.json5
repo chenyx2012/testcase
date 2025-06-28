@@ -1,0 +1,11 @@
+{
+  "license": "Eclipse Public License version 2.0",
+  "devDependencies": {},
+  "name": "entry",
+  "description": "example description",
+  "repository": "",
+  "version": "2.0.1",
+  "dependencies": {
+    "@ohos/mail": "file:../library"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@animate/style",
+  "version": "0.0.2",
+  "description": "基于ArkUI的KeyframeAnimateTo实现animate.css的动画效果，并允许使用css @keyframe类似的方式自定义动画",
+  "keywords": ['animate','arkui','keyframe','animateTo',"动画","帧动画"],
+  "main": "Index.ets",
+  "author": "fatcarter",
+  "license": "Hippocratic-2.1",
+  "repository": "https://gitee.com/fatcarter/animatestyle.git",
+  "homepage": "https://gitee.com/fatcarter/animatestyle",
+  "dependencies": {}
+}

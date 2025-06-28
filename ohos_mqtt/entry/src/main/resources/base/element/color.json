@@ -1,0 +1,28 @@
+{
+  "color": [
+    {
+      "name": "grey_e3e3e3",
+      "value": "#E3E3E3"
+    },
+    {
+      "name": "grey_e8e8e8",
+      "value": "#e8e8e8"
+    },
+    {
+      "name": "transparent_00000000",
+      "value": "#00000000"
+    },
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "blue_1677ff",
+      "value": "#1677ff"
+    },
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    }
+  ]
+}

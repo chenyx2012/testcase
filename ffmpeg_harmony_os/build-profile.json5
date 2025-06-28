@@ -1,0 +1,63 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/db/.ohos/config/default_ffmpeg_harmony_os_tbfeweN9BKyFkfCbfnSx7VeJ_KU4gRR9joX1g-D_mIA=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B9C916FEFBF7F914493168A7084B0F5B8FFA976BA9EB0E879267F610B3777B72471DBD66715D57B",
+          "profile": "/Users/db/.ohos/config/default_ffmpeg_harmony_os_tbfeweN9BKyFkfCbfnSx7VeJ_KU4gRR9joX1g-D_mIA=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/db/.ohos/config/default_ffmpeg_harmony_os_tbfeweN9BKyFkfCbfnSx7VeJ_KU4gRR9joX1g-D_mIA=.p12",
+          "storePassword": "0000001B0E63D4933DF6164660EFE747772FE17F1597186E8072EF8D4AF81CD4D1D8989A70576E18136DC4"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ffmpeg",
+      "srcPath": "./ffmpeg",
+    },
+    {
+      "name": "filemgr",
+      "srcPath": "./filemgr",
+    }
+  ]
+}

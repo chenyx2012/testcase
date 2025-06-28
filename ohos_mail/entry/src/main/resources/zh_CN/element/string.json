@@ -1,0 +1,380 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "ohos_mail"
+    },
+    {
+      "name": "smtp_protocol",
+      "value": "smtp 协议"
+    },
+    {
+      "name": "pop3_protocol",
+      "value": "pop3 协议"
+    },
+    {
+      "name": "imap_protocol",
+      "value": "imap 协议"
+    },
+    {
+      "name": "Parse_Email",
+      "value": "邮件解析"
+    },
+    {
+      "name": "mimeType",
+      "value": "mimeType"
+    },
+    {
+      "name": "Please_select_an_email_address",
+      "value": "请选择邮箱"
+    },
+    {
+      "name": "Enable_SSL",
+      "value": "开启SSL"
+    },
+    {
+      "name": "Receiving_server",
+      "value": "接件服务器"
+    },
+    {
+      "name": "Please_enter_the_Receiving_server",
+      "value": "请输入接件服务器"
+    },
+    {
+      "name": "Receiving_server_port",
+      "value": "接件服务器端口"
+    },
+    {
+      "name": "Please_enter_the_Receiving_server_port",
+      "value": "请输入接件服务器端口"
+    },
+    {
+      "name": "Receive_Email",
+      "value": "接件邮箱"
+    },
+    {
+      "name": "Please_enter_the_Receive_Email",
+      "value": "请输入接件邮箱"
+    },
+    {
+      "name": "Recipient_email_authorization_code",
+      "value": "接件邮箱授权码"
+    },
+    {
+      "name": "Please_enter_the_Recipient_email_authorization_code",
+      "value": "请输入接件邮箱授权码"
+    },
+    {
+      "name": "Index_of_email_to_read",
+      "value": "需要读取邮件的索引"
+    },
+    {
+      "name": "Sender",
+      "value": "发送人: "
+    },
+    {
+      "name": "Recipient",
+      "value": "接收人: "
+    },
+    {
+      "name": "Subject",
+      "value": "主题: "
+    },
+    {
+      "name": "Date",
+      "value": "日期: "
+    },
+    {
+      "name": "main_body",
+      "value": "正文 "
+    },
+    {
+      "name": "annex",
+      "value": "附件 "
+    },
+    {
+      "name": "Data",
+      "value": "数据: "
+    },
+    {
+      "name": "CharSet",
+      "value": "字符集: "
+    },
+    {
+      "name": "MimeType",
+      "value": "MimeType: "
+    },
+    {
+      "name": "TransferEncoding",
+      "value": "编码:  "
+    },
+    {
+      "name": "Html",
+      "value": "Html "
+    },
+    {
+      "name": "Headers",
+      "value": "Headers "
+    },
+    {
+      "name": "Calendar",
+      "value": "日历  "
+    },
+    {
+      "name": "FileName",
+      "value": "文件名:  "
+    },
+    {
+      "name": "Receive_Mail_taskpool",
+      "value": "接收邮件(taskpool)"
+    },
+    {
+      "name": "Email_content",
+      "value": "邮件内容"
+    },
+    {
+      "name": "update",
+      "value": "更新"
+    },
+    {
+      "name": "Update_email",
+      "value": "更新邮箱(获取最近10封邮件)"
+    },
+    {
+      "name": "Delete_mail",
+      "value": "删除邮件"
+    },
+    {
+      "name": "The_number_of_the_mail_to_delete",
+      "value": "要删除邮件的编号"
+    },
+    {
+      "name": "Delete_successfully",
+      "value": "删除成功"
+    },
+    {
+      "name": "Delete_failed",
+      "value": "删除失败"
+    },
+    {
+      "name": "This_email_does_not_exist",
+      "value": "不存在此邮件"
+    },
+    {
+      "name": "move_Mail",
+      "value": "移动邮件"
+    },
+    {
+      "name": "To_move_the_email_number",
+      "value": "要移动邮件的编号"
+    },
+    {
+      "name": "Move_successful",
+      "value": "移动成功"
+    },
+    {
+      "name": "Test_email_sending",
+      "value": "测试邮件发送"
+    },
+    {
+      "name": "This_is_a_test_email",
+      "value": "这是一个测试邮件"
+    },
+    {
+      "name": "Parse_and_Construct_Email",
+      "value": "邮件解析、构建"
+    },
+    {
+      "name": "parsing_failed",
+      "value": "解析失败："
+    },
+    {
+      "name": "filename_sample_eml",
+      "value": "文件名：sample.eml"
+    },
+    {
+      "name": "parsing_results",
+      "value": "解析结果 : "
+    },
+    {
+      "name": "Email_construction",
+      "value": "构建"
+    },
+    {
+      "name": "construction_resules",
+      "value": "构建结果 : "
+    },
+    {
+      "name": "Sending_server",
+      "value": "发件服务器"
+    },
+    {
+      "name": "Please_enter_the_Sending_server",
+      "value": "请输入发件服务器"
+    },
+    {
+      "name": "Sending_server_port",
+      "value": "发件服务器端口"
+    },
+    {
+      "name": "Please_enter_the_Sending_server_port",
+      "value": "请输入发件服务器端口"
+    },
+    {
+      "name": "Send_Email",
+      "value": "发送邮件"
+    },
+    {
+      "name": "Sender_email_authorization_code",
+      "value": "发件邮箱授权码"
+    },
+    {
+      "name": "Please_enter_the_Sender_email_authorization_code",
+      "value": "请输入发件邮箱授权码"
+    },
+    {
+      "name": "Please_enter_the_recipient_email_address_multiple_email_addresses_separated",
+      "value": "请输入收件邮箱,多个邮箱 , 隔开"
+    },
+    {
+      "name": "CC_email",
+      "value": "抄送邮箱"
+    },
+    {
+      "name": "Please_ente_the_cc_recipients_email_address",
+      "value": "请输入抄送邮箱地址"
+    },
+    {
+      "name": "BCC_email",
+      "value": "密送邮箱"
+    },
+    {
+      "name": "Please_enter_the_BCC_email",
+      "value": "请输入密送邮箱地址"
+    },
+    {
+      "name": "Please_enter_the_sending_email_address",
+      "value": "请输入发送邮箱地址"
+    },
+    {
+      "name": "Please_enter_the_Subject",
+      "value": "请输入主题"
+    },
+    {
+      "name": "Body",
+      "value": "邮件文本内容"
+    },
+    {
+      "name": "Please_enter_the_Body",
+      "value": "请输入邮件文本内容"
+    },
+    {
+      "name": "Sent_successfully",
+      "value": "发送成功!"
+    },
+    {
+      "name": "Send_failure",
+      "value": "发送失败: "
+    },
+    {
+      "name": "Forward",
+      "value": "转发"
+    },
+    {
+      "name": "Forwarding_test",
+      "value": "转发测试"
+    },
+    {
+      "name": "Inline_attachments",
+      "value": "内联附件"
+    },
+    {
+      "name": "original_email",
+      "value": "原始邮件"
+    },
+    {
+      "name": "Sending_time",
+      "value": "发送时间"
+    },
+    {
+      "name": "CC",
+      "value": "抄送: "
+    },
+    {
+      "name": "Forwarded_successfully",
+      "value": "转发成功."
+    },
+    {
+      "name": "Forwarded_failure",
+      "value": "转发失败"
+    },
+    {
+      "name": "Reply_to_Email",
+      "value": "回复邮件"
+    },
+    {
+      "name": "Index_of_email_to_forward",
+      "value": "需要转发邮件的索引"
+    },
+    {
+      "name": "Index_of_email_to_reply_to",
+      "value": "需要回复邮件的索引"
+    },
+    {
+      "name": "Reply_testing",
+      "value": "回复测试"
+    },
+    {
+      "name": "bcc",
+      "value": "密送: "
+    },
+    {
+      "name": "Replied_successfully",
+      "value": "回复成功！"
+    },
+    {
+      "name": "Replied_failure",
+      "value": "回复失败"
+    },
+    {
+      "name": "This_is_subject",
+      "value": "这是一个主题"
+    },
+    {
+      "name": "This_is_text",
+      "value": "这是一个文本"
+    },
+    {
+      "name": "Recipient_email",
+      "value": "收件邮箱"
+    },
+    {
+      "name": "Please_enter_the_Recipient_email",
+      "value": "请输入收件邮箱"
+    },
+    {
+      "name": "Test_MIME_Type",
+      "value": "测试 MIME Type"
+    },
+    {
+      "name": "test_otherfile_mimetype",
+      "value": "测试其他 mimetype"
+    },
+    {
+      "name": "Resolving",
+      "value": "正在解析..."
+    },
+    {
+      "name": "Resolving_result",
+      "value": "构建结果 : "
+    }
+  ]
+}

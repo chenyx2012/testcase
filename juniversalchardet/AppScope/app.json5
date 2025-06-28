@@ -1,0 +1,11 @@
+{
+  "app": {
+    "bundleName": "cn.openharmony.juniversalchardet",
+    "vendor": "example",
+    "versionCode": 1000002,
+    "versionName": "2.0.1",
+    "icon": "$media:app_icon",
+    "label": "$string:app_name",
+    "distributedNotificationEnabled": true
+  }
+}

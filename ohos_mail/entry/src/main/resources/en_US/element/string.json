@@ -1,0 +1,380 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "ohos_mail"
+    },
+    {
+      "name": "smtp_protocol",
+      "value": "smtp protocol"
+    },
+    {
+      "name": "pop3_protocol",
+      "value": "pop3 protocol"
+    },
+    {
+      "name": "imap_protocol",
+      "value": "imap protocol"
+    },
+    {
+      "name": "Parse_Email",
+      "value": "Parse Email"
+    },
+    {
+      "name": "mimeType",
+      "value": "mimeType"
+    },
+    {
+      "name": "Please_select_an_email_address",
+      "value": "Please select an email address"
+    },
+    {
+      "name": "Enable_SSL",
+      "value": "Enable SSL"
+    },
+    {
+      "name": "Receiving_server",
+      "value": "Receiving server"
+    },
+    {
+      "name": "Please_enter_the_Receiving_server",
+      "value": "Please enter the Receiving server"
+    },
+    {
+      "name": "Receiving_server_port",
+      "value": "Receiving server port"
+    },
+    {
+      "name": "Please_enter_the_Receiving_server_port",
+      "value": "Please enter the Receiving server port"
+    },
+    {
+      "name": "Receive_Email",
+      "value": "Receive Email"
+    },
+    {
+      "name": "Please_enter_the_Receive_Email",
+      "value": "Please enter the Receive Email"
+    },
+    {
+      "name": "Recipient_email_authorization_code",
+      "value": "Recipient email authorization code"
+    },
+    {
+      "name": "Please_enter_the_Recipient_email_authorization_code",
+      "value": "Please enter the Recipient email authorization code"
+    },
+    {
+      "name": "Index_of_email_to_read",
+      "value": "Index of email to read"
+    },
+    {
+      "name": "Sender",
+      "value": "Sender: "
+    },
+    {
+      "name": "Recipient",
+      "value": "Recipient: "
+    },
+    {
+      "name": "Subject",
+      "value": "Subject: "
+    },
+    {
+      "name": "Date",
+      "value": "Date: "
+    },
+    {
+      "name": "main_body",
+      "value": "main body "
+    },
+    {
+      "name": "annex",
+      "value": "annex "
+    },
+    {
+      "name": "Data",
+      "value": "Data: "
+    },
+    {
+      "name": "CharSet",
+      "value": "CharSet: "
+    },
+    {
+      "name": "MimeType",
+      "value": "MimeType: "
+    },
+    {
+      "name": "TransferEncoding",
+      "value": "TransferEncoding:  "
+    },
+    {
+      "name": "Html",
+      "value": "Html "
+    },
+    {
+      "name": "Headers",
+      "value": "Headers "
+    },
+    {
+      "name": "Calendar",
+      "value": "Calendar  "
+    },
+    {
+      "name": "FileName",
+      "value": "FileName:  "
+    },
+    {
+      "name": "Receive_Mail_taskpool",
+      "value": "Receive  Mail(taskpool)"
+    },
+    {
+      "name": "Email_content",
+      "value": "Email content"
+    },
+    {
+      "name": "update",
+      "value": "update"
+    },
+    {
+      "name": "Update_email",
+      "value": "Update email(Get the last 10 emails)"
+    },
+    {
+      "name": "Delete_mail",
+      "value": "Delete mail"
+    },
+    {
+      "name": "The_number_of_the_mail_to_delete",
+      "value": "The number of the message to delete"
+    },
+    {
+      "name": "Delete_successfully",
+      "value": "Delete successfully"
+    },
+    {
+      "name": "Delete_failed",
+      "value": "Delete failed"
+    },
+    {
+      "name": "This_email_does_not_exist",
+      "value": "This email does not exist"
+    },
+    {
+      "name": "move_Mail",
+      "value": "move Mail"
+    },
+    {
+      "name": "To_move_the_email_number",
+      "value": "To move the email number"
+    },
+    {
+      "name": "Move_successful",
+      "value": "Move successful"
+    },
+    {
+      "name": "Test_email_sending",
+      "value": "Test email sending"
+    },
+    {
+      "name": "This_is_a_test_email",
+      "value": "This is a test email"
+    },
+    {
+      "name": "Parse_and_Construct_Email",
+      "value": "Parse and Construct Email"
+    },
+    {
+      "name": "parsing_failed",
+      "value": "parsing failed："
+    },
+    {
+      "name": "filename_sample_eml",
+      "value": "File name：sample.eml"
+    },
+    {
+      "name": "parsing_results",
+      "value": "Parsing result:"
+    },
+    {
+      "name": "Email_construction",
+      "value": "Construct"
+    },
+    {
+      "name": "construction_resules",
+      "value": "Construction result:"
+    },
+    {
+      "name": "Sending_server",
+      "value": "Sending server"
+    },
+    {
+      "name": "Please_enter_the_Sending_server",
+      "value": "Please enter the Sending server"
+    },
+    {
+      "name": "Sending_server_port",
+      "value": "Sending server port"
+    },
+    {
+      "name": "Please_enter_the_Sending_server_port",
+      "value": "Please enter the Sending server port"
+    },
+    {
+      "name": "Send_Email",
+      "value": "Send Email"
+    },
+    {
+      "name": "Sender_email_authorization_code",
+      "value": "Sender email authorization code"
+    },
+    {
+      "name": "Please_enter_the_Sender_email_authorization_code",
+      "value": "Please enter the Sender email authorization code"
+    },
+    {
+      "name": "Please_enter_the_recipient_email_address_multiple_email_addresses_separated",
+      "value": "Please enter the recipient email address, multiple email addresses separated"
+    },
+    {
+      "name": "CC_email",
+      "value": "CC email"
+    },
+    {
+      "name": "Please_ente_the_cc_recipients_email_address",
+      "value": "Please enter the cc recipient's email address"
+    },
+    {
+      "name": "BCC_email",
+      "value": "BCC email"
+    },
+    {
+      "name": "Please_enter_the_BCC_email",
+      "value": "Please enter the BCC email address"
+    },
+    {
+      "name": "Please_enter_the_sending_email_address",
+      "value": "Please enter the sending email address"
+    },
+    {
+      "name": "Please_enter_the_Subject",
+      "value": "Please enter the Subject"
+    },
+    {
+      "name": "Body",
+      "value": "Body"
+    },
+    {
+      "name": "Please_enter_the_Body",
+      "value": "Please enter the Body"
+    },
+    {
+      "name": "Sent_successfully",
+      "value": "Sent successfully!"
+    },
+    {
+      "name": "Send_failure",
+      "value": "Send failure: "
+    },
+    {
+      "name": "Forward",
+      "value": "Forward"
+    },
+    {
+      "name": "Forwarding_test",
+      "value": "Forwarding test"
+    },
+    {
+      "name": "Inline_attachments",
+      "value": "Inline attachments"
+    },
+    {
+      "name": "original_email",
+      "value": "original email"
+    },
+    {
+      "name": "Sending_time",
+      "value": "Sending time"
+    },
+    {
+      "name": "CC",
+      "value": "CC: "
+    },
+    {
+      "name": "Forwarded_successfully",
+      "value": "Forwarded successfully."
+    },
+    {
+      "name": "Forwarded_failure",
+      "value": "Forwarded failure"
+    },
+    {
+      "name": "Reply_to_Email",
+      "value": "Reply to Email"
+    },
+    {
+      "name": "Index_of_email_to_forward",
+      "value": "Index of email to forward"
+    },
+    {
+      "name": "Index_of_email_to_reply_to",
+      "value": "Index of email to reply to"
+    },
+    {
+      "name": "Reply_testing",
+      "value": "Reply testing"
+    },
+    {
+      "name": "bcc",
+      "value": "bcc: "
+    },
+    {
+      "name": "Replied_successfully",
+      "value": "Replied successfully."
+    },
+    {
+      "name": "Replied_failure",
+      "value": "Replied failure."
+    },
+    {
+      "name": "This_is_subject",
+      "value": "This is subject"
+    },
+    {
+      "name": "This_is_text",
+      "value": "This is text"
+    },
+    {
+      "name": "Recipient_email",
+      "value": "Recipient email"
+    },
+    {
+      "name": "Please_enter_the_Recipient_email",
+      "value": "Please enter the Recipient email"
+    },
+    {
+      "name": "Test_MIME_Type",
+      "value": "Test MIME Type"
+    },
+    {
+      "name": "test_otherfile_mimetype",
+      "value": "test otherfile mimetype"
+    },
+    {
+      "name": "Resolving",
+      "value": "Resolving..."
+    },
+    {
+      "name": "Resolving_result",
+      "value": "Resolving result : "
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "devDependencies": {},
+  "name": "entry",
+  "description": "",
+  "version": "2.0.1",
+  "dependencies": {
+    "@ohos/juniversalchardet": "file:../library"
+  }
+}

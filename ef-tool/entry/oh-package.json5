@@ -1,0 +1,17 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@yunkss/eftool": "2.0.2",
+    "@ohos/lottie": "^2.0.11"
+  },
+  "devDependencies": {
+    "@ohos/axios": "2.2.2",
+    "ef_audio": "file:../ef_audio"
+  },
+  "dynamicDependencies": {}
+}

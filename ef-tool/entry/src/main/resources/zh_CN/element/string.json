@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "主Ability"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "鸿蒙开发宝典"
+    },
+    {
+      "name": "read_permission",
+      "value": "读取权限"
+    },
+    {
+      "name": "write_permission",
+      "value": "写入权限"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "MainAbility"
+    }
+  ]
+}

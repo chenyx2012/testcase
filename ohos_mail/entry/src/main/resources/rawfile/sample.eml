@@ -1,0 +1,141 @@
++OK 4705 octets
+X-Mda-Received: from <mx-8-23.mail.sina.com.cn>([<10.71.8.23>])
+ by <mda-1-107.mda.fmail.qxg.sinanode.com> with LMTP id <1645904>
+ Apr 26 2022 15:58:25 +0800 (CST)
+X-Sina-MID:0439D29246576429B0838EF06A516ACAEA00000000000001
+X-Sina-Attnum:1
+Received: from vipregular1.263.net (HELO vipregular1.263.net)([211.150.80.24])
+	by sina.com (10.71.8.23) with SMTP
+	id 6267A61E00000B11; Tue, 26 Apr 2022 15:58:23 +0800 (CST)
+X-Sender: xx@hoperun.com
+Authentication-Results: sina.com; dkim=none (Message not signed) header.i=none
+Received-SPF: Pass (sina.com: SPF record at spf5.263.net designates 211.150.80.24 as permitted sender) identity=from;
+	client-ip=211.150.80.24;
+	receiver=sina.com;
+	envelope-from=xx@hoperun.com;
+	helo=vipregular1.263.net
+X-SMAIL-MID: 419603980
+Received: from localhost (unknown [192.168.167.16])
+	by vipregular1.263.net (Postfix) with ESMTP id C77C73C4
+	for <xx@sina.com>; Tue, 26 Apr 2022 15:58:22 +0800 (CST)
+X-MAIL-GRAY:0
+X-MAIL-DELIVERY:1
+X-ADDR-CHECKED:0
+X-SKE-CHECKED:1
+X-ABS-CHECKED:0
+X-ANTISPAM-LEVEL:2
+Received: from he202101041036 (unknown [113.200.202.18])
+	by smtp.263.net (postfix) whith ESMTP id P21815T140651712734976S1650959902507021_;
+	Tue, 26 Apr 2022 15:58:23 +0800 (CST)
+X-IP-DOMAINF:1
+X-RL-SENDER:xx@hoperun.com
+X-SENDER:xx@hoperun.com
+X-LOGIN-NAME:xx@hoperun.com
+X-FST-TO:xx@sina.com
+X-RCPT-COUNT:1
+X-LOCAL-RCPT-COUNT:0
+X-MUTI-DOMAIN-COUNT:0
+X-SENDER-IP:113.200.202.18
+X-ATTACHMENT-NUM:1
+X-UNIQUE-TAG:<1461d87c5de78625eb806b0d6009bbaf>
+X-System-Flag:0
+From: "xileilei" <xx@hoperun.com>
+To: <xx@sina.com>
+Subject: this is mail title
+Date: Tue, 26 Apr 2022 15:58:21 +0800
+Message-ID: <001601d85943$66806100$33812300$@hoperun.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0017_01D85986.74A3EF20"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AdhZQ1ntErP0s9m4SF2P2LYMxkoC7w==
+Content-Language: zh-cn
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0017_01D85986.74A3EF20
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0018_01D85986.74A3EF20"
+
+
+------=_NextPart_001_0018_01D85986.74A3EF20
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+This is mail content
+
+
+------=_NextPart_001_0018_01D85986.74A3EF20
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><META =
+HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii"><meta name=3DGenerator content=3D"Microsoft Word 15 =
+(filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:\7B49\7EBF;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@\7B49\7EBF";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:\7B49\7EBF;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:\7B49\7EBF;
+	color:windowtext;}
+..MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:\7B49\7EBF;}
+/* Page Definitions */
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DZH-CN =
+link=3D"#0563C1" vlink=3D"#954F72" =
+style=3D'text-justify-trim:punctuation'><div class=3DWordSection1><p =
+class=3DMsoNormal><span lang=3DEN-US>This is mail =
+content<o:p></o:p></span></p></div></body></html>
+------=_NextPart_001_0018_01D85986.74A3EF20--
+
+------=_NextPart_000_0017_01D85986.74A3EF20
+Content-Type: text/plain;
+	name="mail.txt"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment;
+	filename="mail.txt"
+
+this is mail test
+------=_NextPart_000_0017_01D85986.74A3EF20--

@@ -1,0 +1,43 @@
+[
+    {
+        "Name": "mail",
+        "License": "Eclipse Public License V2.0",
+        "License File": "LICENSE.md",
+        "Version Number": "v2.1.1",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/eclipse-ee4j/mail",
+        "Description": " defines a platform-independent and protocol-independent framework to build mail and messaging applications"
+    }, {
+        "Name": "emlformat",
+        "License": "MIT License",
+        "License File": "LICENSE",
+        "Version Number": "v0.6.1",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/papnkukn/eml-format",
+        "Description": "  pure Node.js library for parsing and building EML files, i.e. e-mail message format described in RFC 822. EML is returned by the POP3 protocol and handled by many e-mail agents like Mozilla Thunderbird or Micfosot Outlook. An EML file consists of headers and body similar to the HTTP structure"
+    }, {
+        "Name": "mime-types",
+        "License": "Apache-2.0 license",
+        "License File": "LICENSE",
+        "Version Number": "v1.0.2",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/overview/mime-types",
+        "Description": " Ever see 'application/octet-stream' or 'text/plain' or 'text/html'? Those are called MIME types. ('MIME' stands for Multi-purpose Internet Mail Extensions.) If your Java program has files and needs to figure out their MIME types, this library will help"
+    }, {
+        "Name": "emailjs-utf7",
+        "License": "LICENSE-MIT",
+        "License File": "LICENSE",
+        "Version Number": "v4.0.1",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/emailjs/emailjs-utf7",
+        "Description": "Encodes and decodes JavaScript (Unicode/UCS-2) strings to UTF-7 ASCII strings. It supports two modes: UTF-7 as defined in RFC 2152 and Modified UTF-7 as defined by the IMAP standard in RFC 3501, section 5.1.3"
+    }, {
+        "Name": "emailjs-base64",
+        "License": "MIT License",
+        "License File": "LICENSE",
+        "Version Number": "v1.1.4",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/emailjs/emailjs-base64",
+        "Description": "Safe Base64 de/encoding to and from strings and typed arrays"
+    }
+]

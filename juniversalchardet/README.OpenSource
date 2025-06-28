@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "juniversalchardet",
+        "License": "MOZILLA PUBLIC LICENSE",
+        "License File": " LICENSE ",
+        "Version Number": "2.4.0",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/albfernandez/juniversalchardet",
+        "Description": "Originally exported from code.google.com/p/juniversalchardet."
+    }
+]

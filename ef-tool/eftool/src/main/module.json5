@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "eftool",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "phone"
+    ]
+  }
+}

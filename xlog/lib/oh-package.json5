@@ -1,0 +1,19 @@
+{
+  "license": "MulanPSL-2.0",
+  "types": "",
+  "keywords": [
+    "XLog",
+    "OpenHarmony",
+    "HarmonyOS"
+  ],
+  "devDependencies": {},
+  "name": "@ohos-port/xlog",
+  "author": "wathinst",
+  "description": "基于OpenHarmony/HarmonyOS使用ArkTS重写的XLog日志框架库， 具备轻量、美观强大、可扩展的特性",
+  "repository": "https://gitee.com/ohos_port/xlog",
+  "homepage": "https://gitee.com/wathinst",
+  "main": "index.ets",
+  "type": "module",
+  "version": "1.2.0",
+  "dependencies": {}
+}

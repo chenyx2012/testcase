@@ -1,0 +1,10 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/smtp",
+    "pages/pop",
+    "pages/imap",
+    "pages/mimeType",
+    "pages/mailParseAndBuild"
+  ]
+}

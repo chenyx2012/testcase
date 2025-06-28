@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件列表</title>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>文件管理</h1>
+        <div class="actions">
+            <button class="action-btn" id="refresh">
+                <i class="fa fa-refresh"></i> 刷新
+            </button>
+            <button class="action-btn" id="showModal">
+                <i class="fa fa-upload"></i> 上传文件
+            </button>
+        </div>
+    </div>
+
+    <table class="file-table">
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>文件名称</th>
+            <th>创建时间</th>
+            <th>文件大小</th>
+            <th>操作<span id="total"></span></th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+</div>
+
+<!-- 空状态示例 (取消注释可查看)-->
+<div id="uploadModal" class="uploadContainer fade-in hidden">
+    <div class="upload">
+        <div class="upload-title">
+            <h3>上传文件</h3>
+            <button id="closeUploadBtn" class="close">
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <div class="upload-content" id="dropArea">
+            <i class="fa fa-cloud-upload  upload-icon"></i>
+            <p class="text">拖放文件到此处或</p>
+            <label class="cursor-pointer">
+                        <span>
+                            <i class="fa fa-folder-open mr-2"></i>选择文件
+                        </span>
+                <input type="file" id="fileInput" class="hidden" multiple>
+            </label>
+            <p id="uploadFileName" class="hidden"></p>
+        </div>
+
+        <div class="upload-footer">
+            <button id="cancelUploadBtn" class="bg-gray">
+                取消
+            </button>
+            <button id="startUploadBtn" class="bg-primary">
+                开始上传
+            </button>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+
+    const showModalBtn = document.getElementById('showModal');
+    const refreshBtn = document.getElementById('refresh');
+    const uploadBtn = document.getElementById('refresh');
+    const tableTotal = document.getElementById('total');
+    const tableTbody = document.getElementById('tbody');
+    const uploadModalEl = document.getElementById('uploadModal');
+    const closeUploadBtn = document.getElementById('closeUploadBtn');
+    const cancelUploadBtn = document.getElementById('cancelUploadBtn');
+    const startUploadBtn = document.getElementById('startUploadBtn');
+    const fileInput = document.getElementById('fileInput');
+    const uploadFileName = document.getElementById('uploadFileName');
+
+    // 获取文件大小
+    function getFileSize(size) {
+        if (size > 1048576) {
+            return `${(size / 1048576).toFixed(2)} MB`;
+        } else if (size > 1024) {
+            return `${(size / 1024).toFixed(2)} KB`;
+        } else {
+            return `${size} B`;
+        }
+    }
+     // 获取文件类型
+     function getFileType(fileName) {
+        let fileTypeArr = fileName.split('.');
+        let fileType = fileTypeArr[1] ? fileTypeArr[1] : 'default';
+        return fileType;
+    }
+
+    // 获取文件图标类型
+    function getFileIcon(fileName) {
+            let fileType = getFileType(fileName);
+            const iconMap = {
+                pdf: 'pdf-o',
+                jpg: 'image-o',
+                jpeg: 'image-o',
+                png: 'image-o',
+                docx: 'word-o',
+                xlsx: 'excel-o',
+                pptx: 'powerpoint-o',
+                txt: 'text-o',
+                fig: 'file-o',
+                zip: 'archive-o',
+                default: 'text-o'
+            };
+
+            return iconMap[fileType] || iconMap.default;
+        }
+
+    // 获取文件颜色
+    function getFileColor(fileName) {
+            let fileType = getFileType(fileName);
+            const colorMap = {
+                pdf: 'red',
+                jpg: 'blue',
+                jpeg: 'blue',
+                png: 'orange',
+                doc: 'crimson',
+                docx: 'crimson',
+                xls: 'green',
+                xlsx: 'green',
+                ppt: 'orange',
+                pptx: 'orange',
+                txt: 'gray',
+                fig: 'purple',
+                zip: 'yellow',
+                default: 'gray',
+                md: 'coral'
+            };
+
+            return colorMap[fileType] || colorMap.default;
+        }
+
+    // 获取文件列表
+    function getList() {
+        axios.get('/tpc/getList')
+            .then( res => {
+                let innerHtml = '';
+                res.data.forEach((element, index) => {
+                innerHtml += ` <tr class="hover-scale">
+                                    <td style="width: 60px">${index + 1}</td>
+                                    <td style="max-width: 400px">
+                                        <div class="file-info">
+                                            <div class="file-icon ${getFileColor(element.name)}">
+                                                <i class="fa fa-file-${getFileIcon(element.name)}"></i>
+                                            </div>
+                                            <div>
+                                                <div class="file-name">${element.name}</div>
+                                                <div class="file-type">${getFileType(element.name)}文件</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>${element.uploadTime}</td>
+                                    <td>${getFileSize(element.size)} </td>
+                                    <td>
+                                        <div class="file-actions">
+                                            <a href="/upload/${element.link}" class="action-link download" target="_blank">
+                                                <i class="fa fa-download"></i> 下载
+                                            </a>
+                                            <a href="#" class="action-link delete" onclick="deleteFile('${element.name}')">
+                                                <i class="fa fa-trash"></i> 删除
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>`;
+
+                });
+                tableTbody.innerHTML = innerHtml;
+                tableTotal.innerHTML = `（共 ${res.data.length} 条）`;
+            })
+            .catch( err => {
+                console.error(err);
+            });
+      }
+
+    // 删除文件 
+    function deleteFile(name) {
+        axios.get('/tpc/deleteFile?path=' + name)
+            .then(res => {
+                getList();
+            })
+            .catch(err => {
+                console.error(err);
+            });
+    }
+        
+    refreshBtn.addEventListener('click', () => {
+        getList();
+    });
+    showModalBtn.addEventListener('click', () => {
+        uploadModalEl.classList.remove('hidden');
+    });
+    closeUploadBtn.addEventListener('click', () => {
+        uploadModalEl.classList.add('hidden');
+    });
+    cancelUploadBtn.addEventListener('click', () => {
+        uploadModalEl.classList.add('hidden');
+    });
+    fileInput.addEventListener('change', (e) => {
+        const files = fileInput.files;
+
+        if (!files) {
+            return;
+        }
+        let text = `已选择：`;
+        for (let i = 0; i < files.length; i++) {
+            text += `${files[i].name}、`;
+        }
+
+        uploadFileName.classList.remove('hidden');
+        uploadFileName.innerHTML = text;
+        uploadFileName.textContent = text;
+    });
+    startUploadBtn.addEventListener('click', (e) => {
+        const files = fileInput.files;
+
+        if (!files) {
+            return;
+        }
+        const formData = new FormData();
+        for (let i = 0; i < files.length; i++) {
+             formData.append('file', files[i]);
+        }
+        let url = '/tpc/upload';
+        axios.post(url, formData, {
+            headers: { 'Content-Type': 'multipart/form-data' }
+        })
+        .then(res => {
+            uploadModalEl.classList.add('hidden');
+            getList();
+        })
+        .catch(err => {
+            console.error(err);
+        });
+    });
+
+    // 显示上传模态框
+    function showUploadModal() {
+        uploadModalEl.classList.add('hidden');
+    }
+
+    getList();
+
+</script>
+</html>

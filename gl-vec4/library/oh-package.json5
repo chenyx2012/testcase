@@ -1,0 +1,26 @@
+{
+  "name": "gl-vec4",
+  "version": "2.1.0",
+  "description": "gl-matrix's vec4, split into smaller pieces.",
+  "homepage": "https://gitee.com/ArkTSCentralRepository",
+  "repository": "https://gitee.com/ArkTSCentralRepository/gl-vec4",
+  "bugs": {
+    "url": "https://github.com/stackgl/gl-vec4/issues"
+  },
+  "main": "src/main/ets/index.ets",
+  "author": "Matt DesLauriers",
+  "license": "Zlib",
+  "dependencies": {},
+  "keywords": [
+    "gl-matrix",
+    "matrix",
+    "math",
+    "mat4",
+    "vectors",
+    "vec4",
+    "color",
+    "mat",
+    "vector",
+    "maths"
+  ]
+}

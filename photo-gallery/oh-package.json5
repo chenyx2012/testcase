@@ -1,0 +1,12 @@
+{
+  "name": "@xsqd/photogallery",
+  "version": "1.3.7",
+  "description": "图片预览库，提供全模态预览窗口、本地缓存、预览图组件等功能",
+  "keywords": ["图片预览","多图预览","预览","图片缓存","本地缓存"],
+  "main": "Index.ets",
+  "author": "汤于艺",
+  "repository": "https://gitee.com/tang-yuyi2003/photo-gallery",
+  "homepage": "https://www.yuque.com/tangyuyi-svueq/qbsed4/zlgwqxw8cohhgwir?singleDoc# 《photogallery(图片预览库)》",
+  "license": "proprietary",
+  "dependencies": {}
+}

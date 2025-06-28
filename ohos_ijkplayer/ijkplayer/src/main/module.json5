@@ -1,0 +1,13 @@
+{
+  "module": {
+    "name": "ijkplayer",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "phone",
+      "car",
+      "2in1"
+    ]
+  }
+}

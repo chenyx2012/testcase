@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "ohos_Mqtt",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ]
+  }
+}

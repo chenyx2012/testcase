@@ -1,0 +1,11 @@
+{
+  "src": [
+    "pages/NetPage",
+    "pages/ImgUp",
+    "pages/InputIndex",
+    "pages/PrefIndex",
+    "pages/Three",
+    "pages/Login",
+    "pages/Home"
+  ]
+}

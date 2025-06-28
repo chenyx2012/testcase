@@ -1,0 +1,17 @@
+{
+  "name": "@yunkss/ef_audio",
+  "version": "1.1.1",
+  "keywords": [
+    "eftool",
+    "audio",
+    "录音",
+    "音频播放"
+  ],
+  "author": "万少",
+  "description": "eftool的音频相关封装包,封装了常用的播放，暂停，快进，设置url等,提供一系列快捷操作方法.",
+  "main": "Index.ets",
+  "repository": "https://gitee.com/yunkss/ef-tool.git",
+  "license": "Apache-2.0",
+  "homepage": "https://gitee.com/yunkss",
+  "dependencies": {}
+}

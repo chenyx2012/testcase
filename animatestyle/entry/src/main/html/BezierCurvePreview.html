@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bézier Curve Animation Examples</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            margin-bottom: 20px;
+        }
+
+  .Linear{
+      animation: move 2s cubic-bezier(0, 0, 1, 1) infinite;
+      }
+  .Ease{
+      animation: move 2s cubic-bezier(0.25, 0.1, 0.25, 1.0) infinite;
+      }
+  .EaseIn{
+      animation: move 2s cubic-bezier(.42, 0, 1, 1) infinite;
+      }
+  .EaseOut{
+      animation: move 2s cubic-bezier(1, 1, 0.58, 1) infinite;
+      }
+  .EaseInOut{
+      animation: move 2s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+      }
+  .FastOutSlowIn{
+      animation: move 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+  .LinearOutSlowIn{
+      animation: move 2s cubic-bezier(0.0, 0.0, 0.2, 1.0) infinite;
+      }
+  .FastOutLinearIn{
+      animation: move 2s cubic-bezier(0.4, 0.0, 1.0, 1.0) infinite;
+      }
+  .ExtremeDeceleration{
+      animation: move 2s cubic-bezier(0.0, 0.0, 0.0, 1.0) infinite;
+      }
+  .Sharp{
+      animation: move 2s cubic-bezier(0.33, 0.0, 0.67, 1.0) infinite;
+      }
+  .Rhythm{
+      animation: move 2s cubic-bezier(0.7, 0.0, 0.2, 1.0) infinite;
+      }
+  .Smooth{
+      animation: move 2s cubic-bezier(0.4, 0.0, 0.4, 1.0) infinite;
+      }
+  .Friction{
+      animation: move 2s cubic-bezier(0.2, 0.0, 0.2, 1.0) infinite;
+      }
+
+
+
+
+        .easeInSine {
+            animation: move 2s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+        }
+        .easeOutSine {
+            animation: move 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+        }
+        .easeInOutSine {
+            animation: move 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+        }
+        .easeInQuad {
+            animation: move 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+        }
+        .easeOutQuad {
+            animation: move 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+        }
+        .easeInOutQuad {
+            animation: move 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+        }
+        .easeInCubic {
+            animation: move 2s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite;
+        }
+        .easeOutCubic {
+            animation: move 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        .easeInOutCubic {
+            animation: move 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+        }
+        .easeInQuart {
+            animation: move 2s cubic-bezier(0.895, 0.03, 0.685, 0.22) infinite;
+        }
+        .easeOutQuart {
+            animation: move 2s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+        }
+        .easeInOutQuart {
+            animation: move 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        }
+
+        @keyframes move {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(300px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box easeInSine">easeInSine</div>
+    <div class="box easeOutSine">easeOutSine</div>
+    <div class="box easeInOutSine">easeInOutSine</div>
+    <div class="box easeInQuad">easeInQuad</div>
+    <div class="box easeOutQuad">easeOutQuad</div>
+    <div class="box easeInOutQuad">easeInOutQuad</div>
+    <div class="box easeInCubic">easeInCubic</div>
+    <div class="box easeOutCubic">easeOutCubic</div>
+    <div class="box easeInOutCubic">easeInOutCubic</div>
+    <div class="box easeInQuart">easeInQuart</div>
+    <div class="box easeOutQuart">easeOutQuart</div>
+    <div class="box easeInOutQuart">easeInOutQuart</div>
+    <div class="box Linear">Linear</div>
+    <div class="box Ease">Ease</div>
+    <div class="box EaseIn">EaseIn</div>
+    <div class="box EaseOut">EaseOut</div>
+    <div class="box EaseInOut">EaseInOut</div>
+    <div class="box FastOutSlowIn">FastOutSlowIn</div>
+    <div class="box LinearOutSlowIn">LinearOutSlowIn</div>
+    <div class="box FastOutLinearIn">FastOutLinearIn</div>
+    <div class="box ExtremeDeceleration">ExtremeDeceleration</div>
+    <div class="box Sharp">Sharp</div>
+    <div class="box Rhythm">Rhythm</div>
+    <div class="box Smooth">Smooth</div>
+    <div class="box Friction">Friction</div>
+
+</div>
+</body>
+</html>

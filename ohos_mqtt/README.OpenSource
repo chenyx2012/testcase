@@ -1,0 +1,38 @@
+[
+    {
+        "Name": "paho.mqtt.c",
+        "License": "Eclipse Public License - v 2.0",
+        "License File": "LICENSE",
+        "Version Number": "1.3.14",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/eclipse/paho.mqtt.c",
+        "Description": "Java implementation of a Disk-based LRU cache which specifically targets Android compatibility."
+    },
+    {
+        "Name": " communication_netstack",
+        "License": "Apache License -v 2.0",
+        "License File": "LICENSE",
+        "Version Number": "OpenHarmony-3.1-Release",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://gitee.com/openharmony/communication_netstack",
+        "Description": "网络协议栈"
+    },
+    {
+         "Name": "openssl",
+         "License": "Apache License -v 2.0",
+         "License File": "LICENSE.txt",
+         "Version Number": "3.4.0",
+         "Owner" : "xiafeng@huawei.com",
+         "Upstream URL": "https://github.com/openssl/openssl",
+         "Description": "TLS/SSL and crypto library"
+    },
+    {
+         "Name": "third_party_bounds_checking_function",
+         "License": " MulanPSL-2.0",
+         "License File": "LICENSE",
+         "Version Number": "OpenHarmony-v4.0-Beta1",
+         "Owner" : "xiafeng@huawei.com",
+         "Upstream URL": "https://gitee.com/openharmony/third_party_bounds_checking_function",
+         "Description": "Third-party open-source software bounds_checking_function | 三方开源软件bounds_checking_function"
+    }
+]

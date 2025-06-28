@@ -1,0 +1,17 @@
+{
+  "license": "Eclipse Public License version 2.0",
+  "types": "",
+  "devDependencies": {},
+  "keywords": [
+    "mail",
+    "OpenHarmony",
+    "HarmonyOS"
+  ],
+  "author": "ohos_tpc",
+  "name": "@ohos/mail",
+  "description": "Ohos_mail mainly provides management functions for sending and receiving emails using SMTP, POP3, and IMAP protocols. It can parse and construct emails in EML format, identify MIME type headers and message bodies of emails, and facilitate developers to perform commonly used email transfers.",
+  "main": "index.ts",
+  "repository": "https://gitee.com/openharmony-sig/ohos_mail",
+  "version": "2.0.1",
+  "dependencies": {}
+}

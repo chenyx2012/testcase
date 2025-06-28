@@ -1,0 +1,26 @@
+{
+  "name": "@yunkss/ef_ui",
+  "version": "1.0.0",
+  "keywords": [
+    "eftool",
+    "UI组件",
+    "loading",
+    "cascade",
+    "弹窗",
+    "全局加载",
+    "Toast",
+    "级联",
+    "alert",
+    "通知"
+  ],
+  "author": "csx",
+  "description": "eftool的UI组件封装包,封装了常用的通知、拍照、定位、预览、全局loading、toast、alert、confirm等,提供丰富的UI组件.",
+  "main": "Index.ets",
+  "repository": "https://gitee.com/yunkss/ef-tool.git",
+  "license": "Apache-2.0",
+  "homepage": "https://gitee.com/yunkss",
+  "dependencies": {
+    "@yunkss/ef_json": "1.0.1",
+    "@yunkss/ef_core": "1.0.1"
+  }
+}

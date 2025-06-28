@@ -1,0 +1,22 @@
+{
+  "name": "@jemoc/stream",
+  "version": "1.1.2",
+  "description": "参考.net Stream方法实现,并提供Deflate方法.",
+  "keywords": [
+    "deflate",
+    "inflate",
+    "stream",
+    "transform",
+    "zip",
+    "brotli"
+  ],
+  "main": "Index.ets",
+  "types": "Index.d.ets",
+  "homepage": "https://gitee.com/jiemoccc/jemoc-memory.git",
+  "repository": "https://gitee.com/jiemoccc/jemoc-memory.git",
+  "author": "ccccjiemo",
+  "license": "(MIT AND ZLIB)",
+  "dependencies": {
+    "libjemoc_stream.so": "file:./src/main/cpp/types/libjemoc_stream"
+  }
+}

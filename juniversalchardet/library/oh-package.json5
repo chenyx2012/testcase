@@ -1,0 +1,17 @@
+{
+  "license": "MPL-1.1",
+  "types": "",
+  "devDependencies": {},
+  "keywords": [
+    "juniversalchardet",
+    "OpenHarmony",
+    "HarmonyOS"
+  ],
+  "author": "hihope",
+  "name": "@ohos/juniversalchardet",
+  "description": "juniversalchardet是一款字符编码高效识别检测库。",
+  "main": "index.ets",
+  "repository": "https://gitee.com/openharmony-sig/juniversalchardet",
+  "version": "2.0.2",
+  "dependencies": {}
+}

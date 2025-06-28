@@ -1,0 +1,20 @@
+{
+    "name": "mdn-data",
+    "description": "Open Web data by the Mozilla Developer Network",
+    "version": "1.1.0",
+    "homepage": "https://gitee.com/ArkTSCentralRepository",
+    "author": "Mozilla Developer Network",
+    "repository": "https://gitee.com/ArkTSCentralRepository/mdn-data",
+    "bugs": {
+        "url": "https://github.com/mdn/data/issues"
+    },
+    "license": "CC0-1.0",
+    "main": "src/main/ets/index.ets",
+    "dependencies": {},
+    "keywords": [
+        "data",
+        "mdn",
+        "mozilla",
+        "css"
+    ]
+}

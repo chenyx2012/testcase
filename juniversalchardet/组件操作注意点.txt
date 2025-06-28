@@ -1,0 +1,34 @@
+本文件是为准备在组件执行时会用到的测试文件用，通过修改以下命令行并执行即可导入文件。
+修改点：
+  No1:把所有【absolute_path】替换为本地绝对路径
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\ascii.txt                                 /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\utf8.txt                                  /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\utf8n.txt                                 /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\utf16le.txt                               /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\shiftjis.txt                              /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\euc.txt                                   /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\iso2022jp.txt                             /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\big5.txt                                  /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\euctw.txt                                 /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\euckr.txt                                 /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\windows1255.txt                           /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\utf8n-emoji.txt                           /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\gb2312-sample.txt                         /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\gbk-sample.txt                            /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\tis620.txt                                /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\ShortStringTests_1.txt                    /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\ShortStringTests_2.txt                    /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\ShortStringTests_3.txt                    /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\bug8-various-failed-charsets.dat          /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\bug20-example-latin.txt                   /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\gb18030.txt                               /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\iso88598.txt                              /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\GB18030SMFalsePositiveTest_1.txt          /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\GB18030SMFalsePositiveTest_2.txt          /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\Bug20LatinDetectedAsMaccyrillicTest_1.txt /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\Bug33USASCIIToGenerous_1.txt              /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+hdc_std file send absolute_path\juniversalchardet\sampleFiles\TestDetector_1.txt                        /data/app/el2/100/base/cn.openharmony.juniversalchardet/haps/entry/files/
+
+  No2:上传文件后，文件owner属性为root，需修改为与files相同的owner
+chmod 777 ascii.txt utf8.txt utf8n.txt utf16le.txt shiftjis.txt euc.txt iso2022jp.txt big5.txt euctw.txt euckr.txt windows1255.txt utf8n-emoji.txt gb2312-sample.txt gbk-sample.txt tis620.txt ShortStringTests_1.txt ShortStringTests_2.txt ShortStringTests_3.txt bug8-various-failed-charsets.dat bug20-example-latin.txt gb18030.txt iso88598.txt GB18030SMFalsePositiveTest_1.txt GB18030SMFalsePositiveTest_2.txt Bug20LatinDetectedAsMaccyrillicTest_1.txt Bug33USASCIIToGenerous_1.txt TestDetector_1.txt
+ps:files属性查看方法 ls -al /data/app/el2/100/base/com.example.juniversalchardet/haps/entry/files

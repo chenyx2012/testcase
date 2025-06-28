@@ -1,0 +1,41 @@
+From 19213e58b23ec7055ff3a70d63f58bfb2aa3f62d Mon Sep 17 00:00:00 2001
+From: longfeng <longfeng20@huawei.com>
+Date: Thu, 4 Jul 2024 17:34:51 +0800
+Subject: [PATCH] Sets the minimum TLS version
+
+---
+ src/SSLSocket.c | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+
+diff --git a/src/SSLSocket.c b/src/SSLSocket.c
+index a4941b6..a43c2a6 100644
+--- a/src/SSLSocket.c
++++ b/src/SSLSocket.c
+@@ -552,6 +552,24 @@ int SSLSocket_createContext(networkHandles* net, MQTTClient_SSLOptions* opts)
+ 	{
+ #if (OPENSSL_VERSION_NUMBER >= 0x10100000L)
+ 		net->ctx = SSL_CTX_new(TLS_client_method());
++
++        /*Sets the minimum TLS version supported by the SSL/TLS context.*/
++        int sslVersion = MQTT_SSL_VERSION_DEFAULT;
++        if (opts->struct_version >= 1) sslVersion = opts->sslVersion;
++        switch (sslVersion)
++        {
++            case MQTT_SSL_VERSION_DEFAULT || MQTT_SSL_VERSION_TLS_1_0:
++                SSL_CTX_set_min_proto_version(net->ctx, TLS1_VERSION);
++                break;
++            case MQTT_SSL_VERSION_TLS_1_1:
++                SSL_CTX_set_min_proto_version(net->ctx, TLS1_1_VERSION);
++                break;
++            case MQTT_SSL_VERSION_TLS_1_2:
++                SSL_CTX_set_min_proto_version(net->ctx, TLS1_2_VERSION);
++                break;
++            default:
++                break;
++        }
+ #else
+ 		int sslVersion = MQTT_SSL_VERSION_DEFAULT;
+ 		if (opts->struct_version >= 1) sslVersion = opts->sslVersion;
+-- 
+2.41.0.windows.1
+
